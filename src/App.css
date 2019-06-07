@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.zip-list-container{
+  background-color: #c2e2eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.zip-container{
+  background-color: blanchedalmond;
+  margin: 5px;
+}
