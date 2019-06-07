@@ -6,7 +6,17 @@ const BASE_URL = 'http://ctp-zip-api.herokuapp.com/city/BRONX';
 
 class App extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      zipcodes: []
+    }
+  }
+
   handleSubmit =()=>{
+    const data = axios.get(BASE_URL)
+    .then(resp => {this.setState({zipcodes: resp.data})},
+    (error)=> {console.log(error.messsage)});
     
   }
 
